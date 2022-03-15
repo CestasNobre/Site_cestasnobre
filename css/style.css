@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+margin: 0px;
+padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: lightgreen;
+}
+
+header {
+    background-image: linear-gradient(to bottom,violet, white);
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+}
+
+nav {
+    display: block;
+    position: fixed;
+    right: 0px;
+    top: 1%;
+}
+
+header a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aqua;
+    color: bisque;
+    box-shadow: 10px solid rgba(0, 0, 0, 0.486);
+}
+
+header h1{
+margin-top: 5%;
+}
+
+main{
+    display: block;
+    max-width: 80%;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+}
+

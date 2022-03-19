@@ -7,14 +7,14 @@ padding: 0px;
 
 html, body {
     min-height: 100vh;
-    background-color: lightgreen;
+    background-color: #07adff;
 }
 
 header {
-    background-image: linear-gradient(to bottom,violet, white);
+    background-image: linear-gradient(to bottom, #1100fa, #07adff);
     text-align: center;
     padding: 20px;
-    height: 100px;
+    height: 80px;
 }
 
 nav {
@@ -29,13 +29,13 @@ header a {
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
-    background-color: aqua;
-    color: bisque;
+    background-color: #07adff;
+    color: #1100fa;
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.486);
 }
 
 header h1{
-margin-top: 2%;
+margin-top: 1.5%;
 }
 
 main{
@@ -44,14 +44,18 @@ main{
     background-color: white;
     text-align: center;
     margin: auto;
+    border-radius: 100px 100px 0px 0px;
 }
 
 #caixa_transicao {
+    display: block;
     width: 100%;
     height: 550px;
+    background-image: url('../imagens/fundo_slide_820x560.jpg');
 }
 
 #moldura {
+    display: block;
     width: 70%;
     height: 450px;
     background-color: #cecece;
@@ -59,14 +63,52 @@ main{
     margin: auto;
 }
 
+#conversa_cliente {
+    display: block;
+    background-image: url("../imagens/imagem_fundo_relacionamento_cliente_820x1200.jpg");
+    background-position: right center;
+    width: 100%;
+    height: 450px;
+}
+
+.erro_img{
+    background-color: rgb(51, 51, 51);
+    color: black;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#caixa_de_texto {
+    display: block;
+    width: 40%;
+    height: 100%;
+    background-color: #ffffff98;
+    overflow: hidden;
+}
+
+#caixa_de_texto > p {
+    text-align: justify;
+    padding: 30px;
+    font-size: 1.5em;
+}
+
 #moldura_kits_pascoa {
-    background-color: lightskyblue;
+    background-image: linear-gradient(to bottom, #d10dfb, #0b4ce3);
+    
+}
+
+#kits {
+    padding: 20px;
 }
 
 .kits_pascoa {
     display: inline-block;
-    height: 300px;
-    background-color: aquamarine;
+    height: 560px;
+    background-color: rgba(255, 255, 255, 0.514);
+    width: 300px;
+    overflow: hidden;
+    
 }
 
 .kits_pascoa h3 {
@@ -81,4 +123,50 @@ main{
     text-align: left;
     padding: 5px;
     font-size: 0.8em;
+}
+
+#meios_contato {
+    display: block;
+    width: 100%;
+    
+}
+
+#meios_contato h2 {
+    padding: 30px;
+}
+
+#mensagem_lateral {
+    display: inline-block;
+    width: 30%;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.473);
+    margin: 10%;
+}
+
+#links_contato {
+    display: inline-block;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#links_contato h3 {
+    padding: 20px;
+}
+
+.img_contato {
+    padding: 15px;
+    margin-left: 20px;
+    text-align: justify;
+    
+}
+
+#rodape {
+    display: block;
+    background-image: linear-gradient(to top, violet, white);
+    height: 100px;
+    text-align: center;
+    padding: 25px;
+    
 }

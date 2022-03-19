@@ -13,12 +13,19 @@ function preload() {
     }
 }
 
-var largura = window.innerWidth
+   var largura = window.innerWidth
 || document.documentElement.clientWidth
 || document.body.clientWidth;
-var altura = window.innerHeight
+    var altura = window.innerHeight
 || document.documentElement.clientHeight
 || document.body.clientHeight;
+
+if (largura <= 560) {
+    document.documentElement.style.setProperty('--vp_slider', '280px');
+} else {
+    document.documentElement.style.setProperty('--vp_slider', '550px');
+}
+
 
 console.log(altura);
 console.log(largura);

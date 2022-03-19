@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+:root {
+    --vp_slider: ;
+
+}
+
 *{
 margin: 0px;
 padding: 0px;
@@ -56,18 +61,23 @@ main{
 #caixa_transicao {
     display: block;
     width: 100%;
-    height: 550px;
+    height: var(--vp_slider);
     background-image: url('../imagens/fundo_slide_820x560.jpg');
 }
 
 #moldura {
     display: block;
     width: 70%;
-    height: 450px;
+    height: 85%;
     background-color: #cecece;
     transition: background-image 2s;
     margin: auto;
     background-position: center center;
+
+}
+
+#moldura img{
+    opacity: 0;
 }
 
 #conversa_cliente {

@@ -22,8 +22,11 @@ function preload() {
 
 if (largura <= 560) {
     document.documentElement.style.setProperty('--vp_slider', '280px');
+    document.documentElement.style.setProperty('--ct_cliente', '60%');
+
 } else {
     document.documentElement.style.setProperty('--vp_slider', '550px');
+    document.documentElement.style.setProperty('--ct_cliente', '40%');
 }
 
 

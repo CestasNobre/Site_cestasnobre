@@ -2,7 +2,7 @@
 
 :root {
     --vp_slider: ;
-
+    --ct_cliente: ;
 }
 
 *{
@@ -98,7 +98,7 @@ main{
 
 #caixa_de_texto {
     display: block;
-    width: 40%;
+    width: var(--ct_cliente);
     height: 100%;
     background-color: #ffffff98;
     overflow: hidden;

@@ -25,11 +25,18 @@ header {
     height: 80px;
 }
 
-nav {
+.topnav {
     display: block;
     position: fixed;
     right: 0px;
     top: 1%;
+}
+
+ul.topnav li {
+    display: inline-block;
+    margin-left: 0.5em;
+    font-size: 0.9em;
+            float:left;
 }
 
 header a {
@@ -51,6 +58,48 @@ header a:hover {
 header h1{
     margin-top: 20px;
     font-variant: small-caps;
+}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+    ul.topnav li {display: none;}
+    ul.topnav li.icon {
+  float: right;/*O ícone será exibido ao lado direito*/
+  display: inline-block;
+    }
+}
+
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {
+  position: relative;
+  background: rgba(0,0,0,0.75); /*Fundo cinza*/
+  height:auto;
+  padding-top:15px;
+  padding-bottom:10px;
+  line-height:5px;
+  width:100%;
+  
+    }
+    ul.topnav.responsive li.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+    }
+    ul.topnav.responsive li {
+   text-align:center; 
+  float: none;
+  padding:0;
+  display: inline;
+  
+    }
+    ul.topnav.responsive li a {
+  display: block;
+  padding:0;
+  text-align: left;
+  line-height:30px;
+  text-align:center;
+    }
 }
 
 main{

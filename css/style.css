@@ -3,6 +3,9 @@
 :root {
     --vp_slider: ;
     --ct_cliente: ;
+    --ct_lt: ;
+    --caixa_pr: ;
+    --msg_lt: ;
 }
 
 *{
@@ -52,7 +55,7 @@ header h1{
 
 main{
     display: block;
-    max-width: 80%;
+    max-width: var(--caixa_pr);
     background-color: white;
     text-align: center;
     margin: auto;
@@ -107,7 +110,7 @@ main{
 #caixa_de_texto > p {
     text-align: justify;
     padding: 30px;
-    font-size: 1.5em;
+    font-size: var(--ct_lt);
 }
 
 #moldura_kits_pascoa {
@@ -155,7 +158,7 @@ main{
 
 #mensagem_lateral {
     display: inline-block;
-    width: 30%;
+    width: var(--msg_lt);
     overflow: hidden;
     border: 1px solid black;
     border-radius: 6px;

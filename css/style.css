@@ -34,8 +34,15 @@ header a {
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.486);
 }
 
+header a:hover {
+    background-color: #6c0be393;
+    color: white;
+    font-weight: bold;
+}
+
 header h1{
-margin-top: 1.5%;
+    margin-top: 20px;
+    font-variant: small-caps;
 }
 
 main{
@@ -44,7 +51,6 @@ main{
     background-color: white;
     text-align: center;
     margin: auto;
-    border-radius: 100px 100px 0px 0px;
 }
 
 #caixa_transicao {
@@ -61,6 +67,7 @@ main{
     background-color: #cecece;
     transition: background-image 2s;
     margin: auto;
+    background-position: center center;
 }
 
 #conversa_cliente {
@@ -108,7 +115,8 @@ main{
     background-color: rgba(255, 255, 255, 0.514);
     width: 300px;
     overflow: hidden;
-    
+    border-radius: 4px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.322);
 }
 
 .kits_pascoa h3 {
@@ -169,4 +177,16 @@ main{
     text-align: center;
     padding: 25px;
     
+}
+
+#rodape a {
+    text-decoration: none;
+    color: black;
+}
+
+#rodape a:hover {
+    background-color: #cf0dfb63;
+    border-radius: 4px;
+    padding: 5px;
+    text-decoration: underline;
 }

@@ -1,6 +1,11 @@
 
 function preload() {
-    imgs = Array('imagens/f1.jpg','imagens/f2.jpg');
+    if (largura <= 530) {
+        imgs = Array('imagens/f1_responsivo.jpg','imagens/f2_responsivo.jpg')
+    } else {
+        imgs = Array('imagens/f1.jpg','imagens/f2.jpg')
+    }
+    ;
     imgQtde = imgs.length;
     for (imgs = 0; imgs < imgQtde; imgs++) {
         var preloading = new Image();
@@ -8,13 +13,27 @@ function preload() {
     }
 }
 
+var largura = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+var altura = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+console.log(altura);
+console.log(largura);
+
 function iniciaSlider() {
     preload();
     max = 2;
     min = 1;
     fotoIndice = min;
     tr = true;
-    carregaFoto("imagens/f1.jpg");
+    if (largura <= 530) {
+        carregaFoto("imagens/f1_responsivo.jpg");
+    } else {
+        carregaFoto("imagens/f1.jpg");
+    }
     document.getElementById("moldura").addEventListener("transitionend", fimTr);
     tmr = setInterval(trocaFoto, 5000);
 }
@@ -25,7 +44,12 @@ function trocaFoto() {
     if (fotoIndice > max) {
         fotoIndice = min;
     }
-    carregaFoto("imagens/f"+fotoIndice+".jpg");
+    if (largura <= 530) {
+        carregaFoto("imagens/f"+fotoIndice+"_responsivo.jpg");
+    } else {
+        carregaFoto("imagens/f"+fotoIndice+".jpg");
+    }
+    
 }
 
 function fimTr() {
@@ -47,7 +71,11 @@ function troca(dr) {
         if (fotoIndice < min) {
             fotoIndice = max;
         }
-        carregaFoto("imagens/f"+fotoIndice+".jpg");
+        if (largura <= 530) {
+            carregaFoto("imagens/f"+fotoIndice+"_responsivo.jpg");
+        } else {
+            carregaFoto("imagens/f"+fotoIndice+".jpg");
+        }
     }
     tmr = setInterval(trocaFoto, 5000);
 }

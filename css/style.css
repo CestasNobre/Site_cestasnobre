@@ -72,17 +72,17 @@ ul.topnav li.icon {display: none;}
 
 ul.topnav.responsive {
     display: block;
-    width: 98vw;
+    width: 100vw;
     background-color: #cecece;
 }
 
 ul.topnav.responsive li{
     display: block;
-    width: 98vw;
+    width: 100vw;
 }
 ul.topnav.responsive li a{
     display: block;
-    width: 98vw;
+    width: 100vw;
     background-color: #cecece;box-shadow: none;
 }
 

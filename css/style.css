@@ -70,7 +70,37 @@ ul.topnav li.icon {display: none;}
     }
 }
 
-
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {
+  position: relative;
+  background: rgba(0,0,0,0.75); /*Fundo cinza*/
+  height:auto;
+  padding-top:15px;
+  padding-bottom:10px;
+  line-height:5px;
+  width:100%;
+  
+    }
+    ul.topnav.responsive li.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+    }
+    ul.topnav.responsive li {
+   text-align:center; 
+  float: none;
+  padding:0;
+  display: inline;
+  
+    }
+    ul.topnav.responsive li a {
+  display: block;
+  padding:0;
+  text-align: left;
+  line-height:30px;
+  text-align:center;
+    }
+  }
 
 main{
     display: block;

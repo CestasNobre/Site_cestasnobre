@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     
     <script src="slider.js"></script>
-    <script src="menu_responsivo.js"></script>
+    
 </head>
 <body onload="iniciaSlider()">
     <header>
@@ -22,7 +22,12 @@
                 <li class="icon"><a href="javascript:void(0);" onclick="myfunction()">&#9776;</a></li>
             </ul>
         </nav>
-   
+        <script>
+            function myFunction() {
+                document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+            }
+        </script>
+
         <h1>Cestas <br> feitas com amor</h1>
 
     </header>

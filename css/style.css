@@ -70,6 +70,8 @@ ul.topnav li.icon {display: none;}
     }
 }
 
+@media screen and (max-width: 680px){
+ 
 ul.topnav.responsive {
     display: block;
     width: 100vw;
@@ -84,6 +86,11 @@ ul.topnav.responsive li a{
     display: block;
     width: 100vw;
     background-color: #cecece;box-shadow: none;
+}
+ul.topnav.responsive li.icon {
+    display: none;
+}
+
 }
 
 main{

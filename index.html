@@ -19,21 +19,13 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#kits">Pascoa</a></li>
                 <li><a href="#links_contato">Contato</a></li>
-                <li class="icon"><a href="javascript:void(0);" onclick="myfunction()">&#9776;</a></li>
+                <li class="icon"><a href="javascript:void(0);" onclick="minhaFuncao()">&#9776;</a></li>
             </ul>
         </nav>
         <script>
-                var largura = window.innerWidth
-            || document.documentElement.clientWidth
-            || document.body.clientWidth;
-                var altura = window.innerHeight
-            || document.documentElement.clientHeight
-            || document.body.clientHeight;
-
-            if (largura <= 680) {
+            function minhaFuncao(){          
                 document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
             }
-
         </script>
 
         <h1>Cestas <br> feitas com amor</h1>

@@ -4,7 +4,6 @@
     --vp_slider: ;
     --ct_cliente: ;
     --ct_lt: ;
-    --caixa_pr: ;
     --msg_lt: ;
 }
 
@@ -49,7 +48,7 @@ header {
     left: 0;
     border-bottom: 3px solid #07adff;
     z-index: 2;
-    background-color: #0b4ce3;
+    background-image: linear-gradient(to bottom, #1100fa, #07adff);
 }
 
 header h1 {
@@ -83,6 +82,15 @@ input#controle-navegacao {
     visibility: hidden; 
     position: absolute;
     opacity: 0;
+}
+
+main{
+    display: block;
+    max-width: 80%;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
 }
 
 @media only screen and (max-width: 600px){
@@ -188,7 +196,9 @@ input#controle-navegacao {
 		transform: scale(1);
     }
 
-    
+    main{
+        max-width: 100%;
+    }
 
     @media  screen and(max-width: 480px) {
         header h1 {
@@ -198,91 +208,7 @@ input#controle-navegacao {
     }    
 }
 
-/*
-header {
-    background-image: linear-gradient(to bottom, #1100fa, #07adff);
-    text-align: center;
-    padding: 20px;
-    height: 80px;
-}
 
-.topnav {
-    display: block;
-    position: fixed;
-    right: 0px;
-    top: 1%;
-}
-
-ul.topnav li {
-    display: inline-block;
-    margin-left: 0.5em;
-    font-size: 0.9em;
-    float: left;
-}
-
-header a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #07adff;
-    color: #1100fa;
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.486);
-}
-
-header a:hover {
-    background-color: #6c0be393;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-header h1{
-    margin-top: 20px;
-    font-variant: small-caps;
-}
-
-ul.topnav li.icon {display: none;}
-
-@media screen and (max-width:680px) {
-    ul.topnav li {display: none;}
-    ul.topnav li.icon {
-  float: right;
-  display: inline-block;
-    }
-}
-
-@media screen and (max-width: 680px){
- 
-ul.topnav.responsive {
-    display: block;
-    width: 100vw;
-    background-color: #cecece;
-
-}
-
-ul.topnav.responsive li{
-    display: block;
-    width: 100vw;
-}
-ul.topnav.responsive li a{
-    display: block;
-    width: 100vw;
-    background-color: #cecece;box-shadow: none;
-}
-ul.topnav.responsive li.icon {
-    display: none;
-}
-
-}
-*/
-main{
-    display: block;
-    max-width: var(--caixa_pr);
-    background-color: white;
-    text-align: center;
-    margin: auto;
-}
 
 #caixa_transicao {
     display: block;

@@ -21,13 +21,11 @@ function preload() {
 || document.body.clientHeight;
 
 if (largura <= 560) {
-    document.documentElement.style.setProperty('--caixa_pr', '100%');
     document.documentElement.style.setProperty('--vp_slider', '280px');
     document.documentElement.style.setProperty('--ct_cliente', '60%');
     document.documentElement.style.setProperty('--ct_lt', '0.8em');
     document.documentElement.style.setProperty('--msg_lt', '80%');
 } else {
-    document.documentElement.style.setProperty('--caixa_pr', '80%');
     document.documentElement.style.setProperty('--vp_slider', '550px');
     document.documentElement.style.setProperty('--ct_cliente', '40%');
     document.documentElement.style.setProperty('--ct_lt', '1.5em');

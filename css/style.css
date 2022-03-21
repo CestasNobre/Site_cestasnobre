@@ -214,6 +214,10 @@ main{
     #surpresinha {
         height: 380px;
     } 
+    header h1 {
+        font-size: 17px;
+        line-height: 30px;
+    } 
 
     @media  screen and(max-width: 480px) {
         header h1 {

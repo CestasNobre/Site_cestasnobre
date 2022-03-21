@@ -12,23 +12,25 @@
     
 </head>
 <body onload="iniciaSlider()">
-    <header>
-        
-        <nav>
-            <ul class="topnav">
+   
+    <header class="topo">
+
+        <h1 class="alinhamentoesquerda">Cestas <br> feitas com amor</h1>
+
+        <input type="checkbox" id="controle-navegacao"/>
+        <label for="control-nav" class="controle-navegacao"></label>
+        <label for="control-nav" class="fechamento-controle-navegacao"></label>
+
+        <nav class="alinhamentodireita">
+            
+            <ul class="navegacaotopo">
                 <li><a href="#">Home</a></li>
                 <li><a href="#kits">Pascoa</a></li>
                 <li><a href="#links_contato">Contato</a></li>
-                <li class="icon"><a href="javascript:void(0);" onclick="minhaFuncao()">&#9776;</a></li>
+               
             </ul>
         </nav>
-        <script>
-            function minhaFuncao(){          
-                document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
-            }
-        </script>
-
-        <h1>Cestas <br> feitas com amor</h1>
+               
 
     </header>
 

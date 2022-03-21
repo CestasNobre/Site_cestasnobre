@@ -83,6 +83,9 @@ input#controle-navegacao {
     position: absolute;
     opacity: 0;
 }
+#aviso_mediaquery_menu {
+    display: none;
+}
 
 main{
     display: block;
@@ -128,6 +131,9 @@ main{
         padding: 15px;
     }
 
+    #afastamentomedia {
+        margin-top: 50px;
+    }
     /*Icone de navegação*/
     .controle-navegacao {
         position: absolute;
@@ -194,6 +200,13 @@ main{
         -webkit-transform: scale(1);
 		-ms-transform: scale(1);
 		transform: scale(1);
+    }
+
+    #aviso_mediaquery_menu {
+        display: block;
+        padding: 20px;
+        text-align: justify;
+        color: white;
     }
     
     /*main responsivo*/

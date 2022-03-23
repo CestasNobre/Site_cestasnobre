@@ -132,7 +132,11 @@ main{
     }
 
     #alinhamentoesquerda {
-        width: 300px;
+        width: 200px;
+    }
+
+    .texto_slogan {
+        display: none;
     }
 
     header ul.navegacaotopo {

@@ -155,7 +155,6 @@ ul#galeria_de_fotos li#foto07:hover{
         -webkit-transition-timing-function: ease-in-out;
         -o-transition-timing-function: ease-in-out;
         transition-timing-function: ease-in-out;
-
     }
 
     ul#galeria_de_fotos li:hover {
@@ -174,7 +173,7 @@ ul#galeria_de_fotos li#foto07:hover{
 
     ul#galeria_de_fotos li#foto01 {
         background: url('../imagens/galeria/foto_1_galeria.jpg') no-repeat;
-        background-position: 0;
+        background-position: center;
         background-size: auto;
         background-color: #ffffff;
     }
@@ -186,7 +185,7 @@ ul#galeria_de_fotos li#foto07:hover{
 
     ul#galeria_de_fotos li#foto02 {
         background: url('../imagens/galeria/foto_2_galeria.jpg') no-repeat;
-        background-position: 0;
+        background-position: center;
         background-size: auto;
         background-color: #ffffff;
     }
@@ -198,7 +197,7 @@ ul#galeria_de_fotos li#foto07:hover{
 
     ul#galeria_de_fotos li#foto03 {
         background: url('../imagens/galeria/foto_3_galeria.jpg') no-repeat;
-        background-position: 0;
+        background-position: center;
         background-size: auto;
         background-color: #ffffff;
     }
@@ -210,7 +209,7 @@ ul#galeria_de_fotos li#foto07:hover{
 
     ul#galeria_de_fotos li#foto04 {
         background: url('../imagens/galeria/foto_4_galeria.jpg') no-repeat;
-        background-position: 0;
+        background-position: center;
         background-size: auto;
         background-color: #ffffff;
     }
@@ -222,7 +221,7 @@ ul#galeria_de_fotos li#foto07:hover{
 
     ul#galeria_de_fotos li#foto05 {
         background: url('../imagens/galeria/foto_5_galeria.jpg') no-repeat;
-        background-position: 0;
+        background-position: center;
         background-size: auto;
         background-color: #ffffff;
     }
@@ -234,7 +233,7 @@ ul#galeria_de_fotos li#foto07:hover{
 
     ul#galeria_de_fotos li#foto06 {
         background: url('../imagens/galeria/foto_6_galeria.jpg') no-repeat;
-        background-position: 0;
+        background-position: center;
         background-size: auto;
         background-color: #ffffff;
     }

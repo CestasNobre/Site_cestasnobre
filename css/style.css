@@ -325,7 +325,9 @@ main{
 }
 
 #kits {
-    padding: 20px;
+    display: block;
+    background-color: #0b4ce37c;
+    padding: 30px;
 }
 
 .kits_pascoa {
@@ -355,11 +357,16 @@ main{
 #meios_contato {
     display: block;
     width: 100%;
-    
+    background-image: url("../imagens/fundo_contato_1000x660.jpg");
+    background-position: right center;
+    width: 100%;
 }
 
 #meios_contato h2 {
+    display: block;
+    background-color: #0b4ce37c;
     padding: 30px;
+    font-size: 40px;
 }
 
 #mensagem_lateral {
@@ -370,6 +377,7 @@ main{
     border-radius: 6px;
     box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.473);
     margin: 10%;
+    background-color: #ffffff8e;
 }
 
 #links_contato {
@@ -379,7 +387,9 @@ main{
 }
 
 #links_contato h3 {
+    background-color: #0b4ce385;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .img_contato {
@@ -389,9 +399,33 @@ main{
     
 }
 
+#metodos_pagamento {
+    display: block;
+    height: 280px;
+}
+
+#metodos_pagamento h3 {
+    display: block;
+    background-color: #0b4ce3;
+    padding: 30px;
+}
+
+.icone_pagamento {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 30px 10px 30px 10px;
+}
+
+@media screen and (max-width:1200px) {
+    #metodos_pagamento {
+        height: auto;
+    }
+    
+}
+
  /*Configurações do rodapé*/
 
-#rodape {
+ #rodape {
     display: block;
     background-image: linear-gradient(to top, #d10dfb, white);
     height: auto;

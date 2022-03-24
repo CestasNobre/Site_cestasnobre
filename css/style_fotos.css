@@ -143,8 +143,8 @@ ul#galeria_de_fotos li#foto07:hover{
 
     ul#galeria_de_fotos li {
         float: left;
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         margin: 20px;
         border: 5px solid #ffffff;
         background-color: #ffffff;
@@ -179,7 +179,7 @@ ul#galeria_de_fotos li#foto07:hover{
     }
 
     ul#galeria_de_fotos li#foto01:hover{
-        background-position: 0%;
+        background-position: center;
         background-size: auto;
     }
 
@@ -191,7 +191,7 @@ ul#galeria_de_fotos li#foto07:hover{
     }
 
     ul#galeria_de_fotos li#foto02:hover{
-        background-position: 0%;
+        background-position: center;
         background-size: auto;
     }
 
@@ -203,7 +203,7 @@ ul#galeria_de_fotos li#foto07:hover{
     }
 
     ul#galeria_de_fotos li#foto03:hover{
-        background-position: 0%;
+        background-position: center;
         background-size: auto;
     }
 
@@ -215,7 +215,7 @@ ul#galeria_de_fotos li#foto07:hover{
     }
 
     ul#galeria_de_fotos li#foto04:hover{
-        background-position: 0%;
+        background-position: center;
         background-size: auto;
     }
 
@@ -227,7 +227,7 @@ ul#galeria_de_fotos li#foto07:hover{
     }
 
     ul#galeria_de_fotos li#foto05:hover{
-        background-position: 0%;
+        background-position: center;
         background-size: auto;
     }
 
@@ -239,7 +239,7 @@ ul#galeria_de_fotos li#foto07:hover{
     }
 
     ul#galeria_de_fotos li#foto06:hover{
-        background-position: 0%;
+        background-position: center;
         background-size: auto;
     }
 

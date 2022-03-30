@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-:root {
-    --vp_slider: ;
-    --ct_cliente: ;
-    --ct_lt: ;
-    --msg_lt: ;
-}
-
 *{
 margin: 0px;
 padding: 0px;
@@ -270,18 +263,18 @@ main{
 #caixa_transicao {
     display: block;
     width: 100%;
-    height: var(--vp_slider);
+    height: 550px;
     background-image: url('../imagens/fundo_slide_820x560.jpg');
 }
 
 #moldura {
     display: block;
     width: 70%;
-    height: 85%;
+    height: 500px;
     background-color: #cecece;
     transition: background-image 2s;
     margin: auto;
-    background-position: center center;
+    background-position: center;
 
 }
 
@@ -307,7 +300,7 @@ main{
 
 #caixa_de_texto {
     display: block;
-    width: var(--ct_cliente);
+    width: 60%;
     height: 100%;
     background-color: #ffffffb9;
     overflow: hidden;
@@ -316,7 +309,7 @@ main{
 #caixa_de_texto > p {
     text-align: justify;
     padding: 30px;
-    font-size: var(--ct_lt);
+    font-size: 1.5em;
 }
 
 #moldura_kits_pascoa {
@@ -371,7 +364,7 @@ main{
 
 #mensagem_lateral {
     display: inline-block;
-    width: var(--msg_lt);
+    width: 30%;
     overflow: hidden;
     border: 1px solid black;
     border-radius: 6px;
@@ -473,4 +466,44 @@ main{
     display: flex;
     justify-content: center;
     font-weight: bolder;
+}
+
+@media only screen and (max-width: 800px){
+    #moldura {
+        width: 100%;
+        height: 400px;
+        -color: #cecece;
+        transition: background-image 2s;
+        margin: auto;
+        background-position: center;
+        
+    }
+
+    @media Only screen and (max-width: 530px) {
+
+        #moldura {
+        width: 100%;
+        height: 250px;
+        -color: #cecece;
+        transition: background-image 2s;
+        margin: auto;
+        background-position: center;
+        }
+
+        #caixa_de_texto {
+            width: 100%;
+        }
+
+        #mensagem_lateral {
+            width: 80%;
+        }
+
+        #caixa_de_texto > p {
+            font-size: 0.8em;
+        }
+
+        #caixa_transicao {
+            height: 280px;
+        }
+    }
 }

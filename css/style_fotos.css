@@ -7,15 +7,14 @@
 }
 
 #galeria_de_fotos {
-    width: 800px;
-    margin: 0 auto;
-    padding: 50px;
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
 }
 
 ul#galeria_de_fotos li {
-    float: left;
     width: 200px;
     height: 200px;
     margin: 20px;

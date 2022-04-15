@@ -85,7 +85,7 @@ main {
 /*Configuração conversa com cliente responsivo*/
 
 #caixa_de_texto p {
-    font-size: 15pt;
+    font-size: 12pt;
 }
 
 /*caixas dos kits responsivos*/
@@ -104,4 +104,9 @@ main {
 header h1 {
     font-size: 17px;
     line-height: 30px;
+}
+
+/*configuração da area de contato*/
+#mensagem_lateral {
+    width: 80%;
 }

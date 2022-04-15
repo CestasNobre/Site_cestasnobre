@@ -58,7 +58,6 @@ header {
     width: 100%;
     margin-top: -25px;
     background-color: #07adff;
-    padding-bottom: 30px;
 }
 
 .navegacaotopo li {
@@ -104,7 +103,7 @@ main {
 /*Configuração conversa com cliente responsivo*/
 
 #caixa_de_texto p {
-    font-size: 18pt;
+    font-size: 15pt;
     
 }
 
@@ -137,5 +136,3 @@ header h1 {
     text-align: justify;
     text-indent: 10px;
 }
-
-

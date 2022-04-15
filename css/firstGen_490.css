@@ -48,7 +48,6 @@ header {
     border-radius: 4px;
     padding: 0px;
     margin: -70px 20px 0px 0px;
-    background-image: url('/imagens/icone_menu_responsivo.png');
     background-position: 50% 50%;
 }
 
@@ -61,6 +60,7 @@ header {
     width: 100%;
     margin-top: -25px;
     background-color: #07adff;
+    padding-bottom: 20px;
 }
 
 .navegacaotopo li {
@@ -101,9 +101,12 @@ main {
     margin: auto;
     background-position: center;
     background-repeat: no-repeat;
-
+    background-size: 100%;
 }
 /*Configuração conversa com cliente responsivo*/
+#conversa_cliente {
+    height: 500px;
+}
 
 #caixa_de_texto p {
     font-size: 15pt;

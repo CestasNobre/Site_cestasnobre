@@ -85,6 +85,13 @@ header li a:hover {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+/*Configuração menu escondido*/
+#icone_menu_resp {
+    display: none;
 }
 
 /*area de configuração da caixa de conteudo do site*/

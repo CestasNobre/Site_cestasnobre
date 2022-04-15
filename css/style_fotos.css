@@ -35,8 +35,8 @@ ul#galeria_de_fotos li span {
 	text-shadow: 1px 1px 1px #000000;
 	background-color: rgba(0, 0, 0, .3);
 	font-size: 9pt;
-	line-height: 370px;
 	padding: 5px;
+    margin: 10px 0px 10px 0px;
 }
 
 ul#galeria_de_fotos li:hover {

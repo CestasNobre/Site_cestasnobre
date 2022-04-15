@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*configuração cabeçalho*/
+header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+}
+/*Configuração logomarca*/
+#alinhamentoesquerda{
+    float: left;
+}
+
+#logotipo_nobre {
+    display: block;
+    background-image: url('../imagens/logo_cestasnobre_70x55.png');
+    width: 70px;
+    height: 55px;
+}
+
+#cx_slogan h1 {
+    display: none;
+}
+
+/*Configuração do menu*/
+.alinhamentodireita {
+    float: right;
+    width: 100%;
+
+}
+
+#icone_menu_resp {
+    float: right;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #6c0be3;
+    border: 2px 2px 2px 2px black;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.466);
+    border-radius: 4px;
+    padding: 0px;
+    margin: -70px 20px 0px 0px;
+    background-image: url('/imagens/icone_menu_responsivo.png');
+    background-position: 50% 50%;
+}
+
+/*Configuração menu escondido*/
+#cx_nav {
+    display: none;
+}
+
+.navegacaotopo {
+    width: 100%;
+    margin-top: -25px;
+    background-color: #07adff;
+}
+
+.navegacaotopo li {
+    float: none;
+    display: block;
+} 
+
+header li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 7px 10px 7px;
+    margin: 5px 0px 0px 0px;
+    text-align: center; 
+    font-size: 18pt;
+    font-weight: 800;  
+    color: black; 
+    width: 100%;
+}
+
+/*Configuração do corpo do site*/
+main {
+    max-width: 100%;
+    margin-top: 60px;
+}
+
+/*Configuração conversa com cliente responsivo*/
+
+#caixa_de_texto p {
+    font-size: 15pt;
+}
+
+/*caixas dos kits responsivos*/
+#coelhofeliz {
+    height: 600px;
+}
+#humildade {
+    height: 450px;
+}
+#simplicidade{
+    height: 450px;
+}
+#surpresinha {
+    height: 380px;
+} 
+header h1 {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+/*Configuração dos meios de contato*/
+
+#meios_contato h2 {
+    display: block;
+    background-color: #0b4ce37c;
+    padding: 30px;
+    font-size: 40px;
+}
+
+#mensagem_lateral {
+    display: inline-block;
+    width: 30%;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.473);
+    margin: 15% 0px 15% 0pc;
+    background-color: #ffffff8e;
+}
+
+
+

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+
+/*Configuração caixa de slide*/
+#moldura {
+    display: block;
+    width: 90%;
+    height: 500px;
+    background-color: #cecece;
+    transition: background-image 2s;
+    margin: auto;
+    background-position: center;
+
+}
+
+/*Configuração caixa de texto*/
+#caixa_de_texto > p {
+    text-align: justify;
+    padding: 20px;
+    text-indent: 15px;
+    font-size: 18pt;
+}

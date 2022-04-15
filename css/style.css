@@ -17,28 +17,33 @@ html, body {
 
 /* --Configuração Cabeçalho do site--*/
 
-.navegacaotopo, .navegacaotopo li {
-    width: auto;
-    float: left;
+header {
     display: block;
-    position: relative;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 3px solid #07adff;
+    background-image: linear-gradient(to bottom, #1100fa, #07adff);
 }
 
-#alinhamentoesquerda {
+/*Configuração logomarca e logotipo*/
+#alinhamentoesquerda{
     float: left;
-    color: black;
-    text-shadow: 0px 0px 0px;
-    width: 400px;
+    display: flex;
 }
 
-#logotipo_nobre{
-    float: left;
-    vertical-align: middle;
+#logotipo_nobre {
+    display: block;
+    background-image: url('../imagens/logo_cestasnobre_140x100.png');
+    width: 140px;
+    height: 100px;
+    background-position: 50% 50%;
 }
 
-.caixa_texto_midia {
-    display: inline-block;
-    margin: 10px;
+header h1 {
+    padding: 10px 0 0 10px;
 }
 
 .texto_slogan {
@@ -46,30 +51,23 @@ html, body {
    margin: 20px 25px 0px 0px;
 }
 
+/*Configuração do menu*/
 .alinhamentodireita {
     float: right;
 }
 
-header {
-    min-height: 60px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    border-bottom: 3px solid #07adff;
-    z-index: 2;
-    background-image: linear-gradient(to bottom, #1100fa, #07adff);
-}
-
-header h1 {
-    padding: 10px 0 0 10px;
+.navegacaotopo, .navegacaotopo li {
+    width: auto;
+    float: left;
+    display: block;
+    position: relative;
 }
 
 header ul {
     padding: 15px 10px 0 0;
+    margin: 15px 15px 0px 0px;
 }
 
-/*Area de configuração do menu*/
 header li a {
     display: block;
     padding: 0 10px;
@@ -89,15 +87,6 @@ header li a:hover {
     font-size: 20px;
 }
 
-input#controle-navegacao {
-    visibility: hidden; 
-    position: absolute;
-    opacity: 0;
-}
-#aviso_mediaquery_menu {
-    display: none;
-}
-
 /*area de configuração da caixa de conteudo do site*/
 main{
     display: block;
@@ -105,7 +94,7 @@ main{
     background-color: white;
     text-align: center;
     margin: auto;
-    margin-top: 125px;
+    margin-top: 110px;
 }
 
 /*Area de configuração do slide principal*/
@@ -124,6 +113,7 @@ main{
     transition: background-image 2s;
     margin: auto;
     background-position: center;
+    background-repeat: no-repeat;
 
 }
 
@@ -149,7 +139,8 @@ main{
 }
 
 #caixa_de_texto {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 60%;
     height: 100%;
     background-color: #ffffffb9;
@@ -158,10 +149,9 @@ main{
 
 #caixa_de_texto > p {
     text-align: justify;
-    padding: 30px;
-    font-size: 1.5em;
-    position: relative;
-    transform: translate(0,25%);
+    padding: 20px;
+    text-indent: 15px;
+    font-size: 22pt;
 }
 
 /*--- Configuração de estilo da aréa dos produtos---*/
@@ -273,6 +263,7 @@ figcaption {
     background-color: #0b4ce385;
     padding: 20px;
     border-radius: 5px;
+    color: #ffffff;
 }
 
 .img_contato {
@@ -358,158 +349,7 @@ figcaption {
     font-weight: bolder;
 }
 
-@media only screen and (max-width: 600px){
-   
-    header nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 180px;
-        border-left: 3px solid #07adff;
-        background-color: #07adff;
-        overflow: auto;
-        z-index: 2;
-        -webkit-transition: all 500ms ease;
-		transition: all 500ms ease;
-		-webkit-transform: translate(100%, 0);
-		-ms-transform: translate(100%, 0);
-		transform: translate(100%, 0);
-    }
 
-    #alinhamentoesquerda {
-        width: 200px;
-    }
-
-    .texto_slogan {
-        display: none;
-    }
-
-    header ul.navegacaotopo {
-        padding: 0;
-
-    }
-
-    header ul.navegacaotopo li {
-        width: 100%;
-        height: 60px;
-    }
-
-    .navegacaotopo li:hover a{
-        background-color: #6c0be393;
-        font-size: 40px;
-        padding: 15px;
-    }
-
-    #afastamentomedia {
-        margin-top: 50px;
-    }
-    /*Icone de navegação*/
-    .controle-navegacao {
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        display: block;
-        width: 30px;
-        padding: 5px 0;
-        border: solid #333;
-        border-width: 3px 0;
-        z-index: 2;
-        cursor: pointer;
-    }
-
-    .controle-navegacao:before {
-        content: "";
-        display: block;
-        height: 3px;
-        background-color: #333;
-    }
-
-    .control-nav-close {
-        position: fixed;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        display: block;
-        z-index: 1;
-        background-color: rgba(0, 0, 0, 0.4);
-        -webkit-transition: all 500ms ease;
-		transition: all 500ms ease;
-		-webkit-transform: translate(100%, 0);
-		-ms-transform: translate(100%, 0);
-		transform: translate(100%, 0);
-    }
-
-    input#controle-navegacao {
-        display: block;
-    }
-
-    input#controle-navegacao:focus ~ .controle-navegacao {
-        border-color: #000;
-        box-shadow: 0px 0px 9px rgba(0,0,0,0.3);
-    } 
-
-    input#control-nav:focus ~ .control-nav:before {
-		background: #000;
-	}
-
-    input#controle-navegacao:checked ~ nav, input#controle-navegacao:checked ~ .control-nav-close {
-        -webkit-transform: translate(0, 0);
-		-ms-transform: translate(0, 0);
-		transform: translate(0, 0);
-    }
-
-
-
-    input:checked {
-        position: relative;
-        opacity: 1;
-        visibility: visible;
-        z-index: 1;
-        -webkit-transform: scale(1);
-		-ms-transform: scale(1);
-		transform: scale(1);
-    }
-
-    #aviso_mediaquery_menu {
-        display: block;
-        padding: 20px;
-        text-align: justify;
-        color: white;
-    }
-    
-    /*main responsivo*/
-    main{
-        max-width: 100%;
-    }
-
-    /*caixas dos kits responsivos*/
-    #coelhofeliz {
-        height: 600px;
-    }
-    #humildade {
-        height: 450px;
-    }
-    #simplicidade{
-        height: 450px;
-    }
-    #surpresinha {
-        height: 380px;
-    } 
-    header h1 {
-        font-size: 17px;
-        line-height: 30px;
-    } 
-
-    @media  screen and(max-width: 480px) {
-        header h1 {
-            font-size: 15px;
-            line-height: 40px;
-        }
-
-    }    
-}
 
 @media only screen and (max-width: 800px){
     #moldura {

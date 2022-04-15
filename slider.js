@@ -1,33 +1,36 @@
 var ciclo = 1
-        //Criando um intervalo para troca da imagem automático
-        setInterval(function () {
-            ciclo++
-            if (ciclo > 2) {
-                ciclo = 1
-            }
-            if (window.matchMedia('(max-width: 530px)').matches) {
-                carregaFoto("imagens/f"+ciclo+"_responsivo.jpg")
-            } else {
-                carregaFoto("imagens/f"+ciclo+".jpg")
-            }
-            
-        }, 4000)    
 
-        //Cria uma função de correspondencia
-        function slider(x) {
-            if (x.matches) {
-                carregaFoto("imagens/f1_responsivo.jpg");
-                document.documentElement.style.setProperty('--ct_cliente', '60%');
-            } else {
-                carregaFoto("imagens/f1.jpg");
-                document.documentElement.style.setProperty('--ct_cliente', '40%');
-            }
-            
-        }
 
-        function carregaFoto(foto) {
-            document.getElementById("moldura").style.backgroundImage="URL("+foto+")";    
-        }
+ //Criando um intervalo para troca da imagem automático
+setInterval(function () {
+    ciclo++
+    if (ciclo > 2) {
+        ciclo = 1
+    }
+    if (window.matchMedia('(max-width: 530px)').matches) {
+        carregaFoto("imagens/f"+ciclo+"_responsivo.jpg")
+    } else {
+        carregaFoto("imagens/f"+ciclo+".jpg")
+                
+    }
+            
+}, 4000)    
+
+//Cria uma função de correspondencia
+function slider(x) {
+    if (x.matches) {
+        carregaFoto("imagens/f1_responsivo.jpg");
+        document.documentElement.style.setProperty('--ct_cliente', '60%');
+    } else {
+        carregaFoto("imagens/f1.jpg");
+        document.documentElement.style.setProperty('--ct_cliente', '40%');
+    }
+            
+}
+
+function carregaFoto(foto) {
+    document.getElementById("moldura").style.backgroundImage="URL("+foto+")";    
+}
 
         //Cria um objeto MediaQueryList
         const jv = window.matchMedia('(max-width: 530px)')

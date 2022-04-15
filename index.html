@@ -8,7 +8,15 @@
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_fotos.css">
+    <!--Estilo responsivo-->
+    <link rel="stylesheet" href="css/lowres_320.css" media="(max-width: 320px)">
+    <link rel="stylesheet" href="css/firstGen_490.css" media="(max-width: 530px)">
+    <link rel="stylesheet" href="css/smartphonezone_720.css" media="(max-width: 720px)">
+    <link rel="stylesheet" href="css/Ipad_768.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="css/portraittab_900.css" media="(max-width: 900px)">
+    <link rel="stylesheet" href="css/Landscapetab_1024.css" media="(max-width: 1024px)">
     
+    <script language="javascript" src="menu_responsivo.js"></script>
     <script language="javascript" src="slider.js"></script>
     
 </head>
@@ -17,28 +25,32 @@
     <header class="topo">
         <div id="alinhamentoesquerda">
             <figure id="logotipo_nobre">
-                <img src="imagens/logo_cestasnobre_140x100.png" alt="Logotipo Cetas Nobre">
+                <!--
+                <img src="imagens/logo_cestasnobre_140x100.png" alt="Logotipo Cetas Nobre" id="logo_cestas">
+                -->
             </figure>
             <div id="cx_slogan">
-                <h1 class="texto_slogan">Cestas <br> feitas com amor</h1>
+                <h1 class="texto_slogan">Cestas feitas com amor</h1>
             </div>
         </div>
 
-        <input type="checkbox" id="controle-navegacao"/>
-        <label for="controle-navegacao" class="controle-navegacao"></label>
-        <label for="controle-navegacao" class="control-nav-close"></label>
-
+        
         <nav class="alinhamentodireita">
+            <a href="#" onclick="abreFechaMenu()" id="icone_menu_resp"></a>
+            <div id="cx_nav">
+                <ul class="navegacaotopo">
+                    <li id="afastamentomedia"><a href="#" onclick="abreFechaMenu()">Home</a></li>
+                    <li><a href="#moldura_kits_pascoa" onclick="abreFechaMenu()">Produtos</a></li>
+                    <li><a href="#caixa_galeria" onclick="abreFechaMenu()">Galeria</a></li>
+                    <li><a href="#links_contato" onclick="abreFechaMenu()">Contato</a></li>
+                
+                </ul>
+            </div>
             
-            <ul class="navegacaotopo">
-                <li id="afastamentomedia"><a href="#">Home</a></li>
-                <li><a href="#moldura_kits_pascoa" >Produtos</a></li>
-                <li><a href="#caixa_galeria">Galeria</a></li>
-                <li><a href="#links_contato">Contato</a></li>
-               
-            </ul>
-            <p id="aviso_mediaquery_menu">Toque no conteúdo ao lado para fechar o menu</p>
         </nav>
+               
+
+    </header>
                
 
     </header>
@@ -95,6 +107,7 @@
                         <p>com 36 itens</p>
                         <h4 class="riscado">De: R$130,00</h4>
                         <h4>Por: R$120,00</h4>
+                        
                     
                     </aside>
                     <aside class="cestas_cafe_manha" id="coucherdesoleil">

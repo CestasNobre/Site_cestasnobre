@@ -81,6 +81,24 @@ main {
     max-width: 100%;
     margin-top: 60px;
 }
+#caixa_transicao {
+    display: block;
+    width: 100%;
+    height: 240px;
+    background-image: url('../imagens/fundo_slide_820x560.jpg');
+}
+
+#moldura {
+    display: block;
+    width: 75%;
+    height: 220px;
+    background-color: #af0d0d;
+    transition: background-image 2s;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
 
 /*Configuração conversa com cliente responsivo*/
 

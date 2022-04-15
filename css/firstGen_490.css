@@ -4,6 +4,10 @@
     margin: 0px;
     padding: 0px;
 }
+
+@media screen and (max-width: 530px){
+    
+
 /*configuração cabeçalho*/
 header {
     position: fixed;
@@ -81,12 +85,17 @@ main {
     max-width: 100%;
     margin-top: 60px;
 }
-
+#caixa_transicao {
+    display: block;
+    width: 100%;
+    height: 240px;
+    background-image: url('../imagens/fundo_slide_820x560.jpg');
+}
 
 #moldura {
     display: block;
-    width: 70%;
-    height: 200px;
+    width: 75%;
+    height: 220px;
     background-color: #af0d0d;
     transition: background-image 2s;
     margin: auto;
@@ -116,4 +125,17 @@ main {
 header h1 {
     font-size: 17px;
     line-height: 30px;
+}
+
+/*configuração da area de contato*/
+#mensagem_lateral {
+    width: 300px;
+    background-color: #ebd5d5de;
+}
+
+#mensagem_lateral p {
+    padding: 5px;
+    text-align: justify;
+    text-indent: 10px;
+}
 }

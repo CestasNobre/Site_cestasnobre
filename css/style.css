@@ -12,7 +12,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #07adff;
+    background-color: #F23D7F;
 }
 
 /* --Configuração Cabeçalho do site--*/
@@ -24,8 +24,8 @@ header {
     top: 0;
     right: 0;
     left: 0;
-    border-bottom: 3px solid #07adff;
-    background-image: linear-gradient(to bottom, #1100fa, #07adff);
+    border-bottom: 3px solid #F26D6D;
+    background-image: linear-gradient(to bottom, #F20F4B, #F23D7F);
 }
 
 /*Configuração logomarca e logotipo*/
@@ -71,13 +71,13 @@ header ul {
 header li a {
     display: block;
     padding: 0 10px;
-    color: #1100fa;
+    color: #fff;
     font-size: 16px;
+    font-weight: 700;
     line-height: 28px;
     text-decoration: none;
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
-    text-shadow: 1px 1px 1px white;
 }
 
 header li a:hover {
@@ -109,9 +109,11 @@ main{
     display: block;
     width: 100%;
     height: 550px;
-    background-image: url('../imagens/fundo_slide_820x560.jpg');
+    background-image: url('../imagens/dia_das_maes_2022.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-
+/*
 #moldura {
     display: block;
     width: 70%;
@@ -123,7 +125,7 @@ main{
     background-repeat: no-repeat;
 
 }
-
+*/
 #moldura img{
     opacity: 0;
 }

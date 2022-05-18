@@ -12,7 +12,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #F23D7F;
+    background-color: #FDE5BF;
 }
 
 /* --Configuração Cabeçalho do site--*/
@@ -24,8 +24,8 @@ header {
     top: 0;
     right: 0;
     left: 0;
-    border-bottom: 3px solid #F26D6D;
-    background-image: linear-gradient(to bottom, #F20F4B, #F23D7F);
+    border-bottom: 3px solid #F28705;
+    background-image: linear-gradient(to bottom, #03A6A6, #FDE5BF);
 }
 
 /*Configuração logomarca e logotipo*/
@@ -71,7 +71,7 @@ header ul {
 header li a {
     display: block;
     padding: 0 10px;
-    color: #fff;
+    color: #591124;
     font-size: 16px;
     font-weight: 700;
     line-height: 28px;
@@ -81,7 +81,7 @@ header li a {
 }
 
 header li a:hover {
-    background-color: #6c0be393;
+    background-color: #F28705;
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -109,7 +109,7 @@ main{
     display: block;
     width: 100%;
     height: 550px;
-    background-image: url('../imagens/dia_das_maes_2022.jpg');
+    background-image: url('../imagens/20220522/dia_do_abraco_20220522.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -166,13 +166,13 @@ main{
 /*--- Configuração de estilo da aréa dos produtos---*/
 
 #moldura_kits_pascoa {
-    background-image: linear-gradient(to bottom, #d10dfb, #0b4ce3);
+    background-image: linear-gradient(to bottom, #FDE5BF, #03A6A6);
     display: block;
 }
 
 #titulo_kits {
     display: block;
-    background-color: #0b4ce37c;
+    background-color: #f28705bb;
     padding: 30px;
     margin-bottom: 30px;
 }
@@ -246,7 +246,7 @@ figcaption {
 
 #meios_contato h2 {
     display: block;
-    background-color: #0b4ce37c;
+    background-color: #f2870591;
     padding: 30px;
     font-size: 40px;
 }
@@ -269,7 +269,7 @@ figcaption {
 }
 
 #links_contato h3 {
-    background-color: #0b4ce385;
+    background-color: #bf066c98;
     padding: 20px;
     border-radius: 5px;
     color: #ffffff;
@@ -310,7 +310,7 @@ figcaption {
 
  #rodape {
     display: block;
-    background-image: linear-gradient(to top, #d10dfb, white);
+    background-image: linear-gradient(to top, #03A6A6, white);
     height: auto;
     text-align: center;
     padding: 25px;

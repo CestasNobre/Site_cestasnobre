@@ -80,8 +80,8 @@ main {
 #caixa_transicao {
     display: block;
     width: 100%;
-    height: 570px;
-    background-image: url('../imagens/dia_das_maes_2022.jpg');
+    height: 500px;
+    background-image: url('../imagens/20220522/dia_do_abraco_20220522.jpg');
 }
 
 /*Configuração conversa com cliente responsivo*/
